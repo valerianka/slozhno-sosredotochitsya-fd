@@ -3,10 +3,14 @@
   и их переопределение под различные устройства
 */
 :root {
+  /* --background-image-url: url(../images/cover-image-dark.png);
   --main-color: #FF0070;
   --main-paragraph-text-color: #F1B2CE;
   --accent-color: #DB00FF;
-  --supplement-text-color: #000028;
+  --supplement-text-color: #000028; */
   --paragraph-font-size: 18px;
   --font-family: 'IBM Plex mono', sans-serif;
+  --margin-small: 10px;
+  --margin-medium: 40px;
+  --margin-large: 50px;
 }
