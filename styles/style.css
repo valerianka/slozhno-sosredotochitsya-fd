@@ -31,13 +31,15 @@
 
 .header__theme-dark-rec-icon {
   position: absolute;
-  width: 58px;
+  min-width: 58px;
   height: 26px;
   top: var(--margin-small);
   right: var(--margin-small);
 }
 
-.header__theme-dark-rec {
+.header__theme-dark-rec::before {
+  content: 'rec';
+  display: inline-block;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 25px;
@@ -47,12 +49,12 @@
 .header__theme-dark-rec::after {
   content: '';
   display: inline-block;
-  vertical-align: middle;
   background-color: var(--main-color);
   border-radius: 50%;
-  box-shadow: 0 0 0  2px rgb(255, 0, 112, 0.6);
-  width: 9px;
-  height: 9px;
+  box-shadow: 0px 0px 2px 4px rgb(255, 0, 112, 0.6);
+  width: 11px;
+  height: 11px;
+  margin-right: 8px;
 }
 
 .header__theme-menu {
@@ -71,6 +73,7 @@
 
 .header__theme-menu-button {
   text-align: center;
+  cursor: pointer;
   font-size: 18px;
   line-height: 18px;
   min-width: 70px;
@@ -91,7 +94,7 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  border: none;
+  border: solid 1px transparent;
 }
 
 .header__theme-menu-button_active {
@@ -102,17 +105,9 @@
   outline: solid 1px rgb(255, 0, 112, 0.4);
 }
 
-.header__theme-menu-button:focus {
-  text-decoration: underline;
+.header__theme-menu-button:focus-visible {
+  border-bottom: solid 1px rgb(255, 0, 112, 0.4);
   outline: none;
-}
-
-.header__theme-menu-item:has(:focus) {
-  outline: none;
-}
-
-.header__theme-menu-item:has(:focus-within) {
-  text-decoration: underline;
 }
 
 .header-title {
@@ -233,7 +228,7 @@
   text-decoration: underline;
 }
 
-.article__link-accent-effect:focus {
+.article__link-accent-effect:focus-visible {
   outline: solid 1px rgb(255, 0, 112, 0.4);
 }
 
