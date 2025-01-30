@@ -5,13 +5,13 @@
 */
 
 :root.theme-dark {
-    --background-image-url: url(../images/cover-image-dark.png);
-    --main-color: #FF0070;
-    --main-paragraph-text-color: #F1B2CE;
-    --accent-color: #DB00FF;
-    --supplement-text-color: #000028;
-  }
-  /* сохраните этот селектор в приведённом виде.
+  --background-image-url: url(../images/cover-image-dark.png);
+  --main-color: #ff0070;
+  --main-paragraph-text-color: #f1b2ce;
+  --accent-color: #db00ff;
+  --supplement-text-color: #000028;
+}
+/* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
@@ -37,8 +37,9 @@
 .theme-dark .header__theme-menu-button {
   color: var(--main-color);
 }
+
 .theme-dark .header__theme-menu-button:hover {
-  outline: solid 1px rgb(50, 49, 45, 0.4);
+  outline: solid 1px rgb(50 49 45 / 0.4);
 }
 
 .theme-dark .main__article-header {

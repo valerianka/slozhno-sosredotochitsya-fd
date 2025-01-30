@@ -9,11 +9,11 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-color: #FFC2E6;
+  background-color: #ffc2e6;
   --background-image-url: url(../images/cover-image-light.png);
-  --main-color: #FF8DCB;
-  --accent-color: #FFC2E6;
-  --footer-title-shadow: #FF0070;
+  --main-color: #ff8dcb;
+  --accent-color: #ffc2e6;
+  --footer-title-shadow: #ff0070;
   --supplement-text-color: #353430;
   --main-paragraph-text-color: #353430;
 }
@@ -24,31 +24,39 @@
 }
 
 .theme-light .header__theme-dark-rec-icon {
-    display: none;
-  }
-.theme-light  .decor-rectangles::before {
-    border-block-end: solid var(--main-paragraph-text-color) 1px;
-    border-inline-start: solid var(--main-paragraph-text-color) 1px;
-  }
+  display: none;
+}
+
+.theme-light .decor-rectangles::before {
+  border-block-end: solid var(--main-paragraph-text-color) 1px;
+  border-inline-start: solid var(--main-paragraph-text-color) 1px;
+}
+
 .theme-light .decor-rectangles::after {
-    border-block-start: solid var(--main-paragraph-text-color) 1px;
-    border-inline-end: solid var(--main-paragraph-text-color) 1px;
-  }
-  .theme-light .header__theme-menu-button_active {
-    border: solid 1px var(--main-paragraph-text-color);
-  }
-  .theme-light .header__theme-menu-button {
-    color: var(--main-paragraph-text-color);
-  }
-  .theme-light .header__theme-menu-button:hover {
-    outline: solid 1px rgb(50, 49, 45, 0.4);
-  }
-  .theme-light .footer__title {
-    text-shadow: 2px 2px 0 var(--footer-title-shadow);
-  }
-  .theme-light .main__article-header {
-    color: var(--main-paragraph-text-color);
-  }
-  .theme-light .article__link-accent-effect:focus {
-    outline: solid 1px rgb(53, 52, 48, 0.4);
-  }
+  border-block-start: solid var(--main-paragraph-text-color) 1px;
+  border-inline-end: solid var(--main-paragraph-text-color) 1px;
+}
+
+.theme-light .header__theme-menu-button_active {
+  border: solid 1px var(--main-paragraph-text-color);
+}
+
+.theme-light .header__theme-menu-button {
+  color: var(--main-paragraph-text-color);
+}
+
+.theme-light .header__theme-menu-button:hover {
+  outline: solid 1px rgb(50 49 45 / 0.4);
+}
+
+.theme-light .footer__title {
+  text-shadow: 2px 2px 0 var(--footer-title-shadow);
+}
+
+.theme-light .main__article-header {
+  color: var(--main-paragraph-text-color);
+}
+
+.theme-light .article__link-accent-effect:focus {
+  outline: solid 1px rgb(53 52 48 / 0.4);
+}
