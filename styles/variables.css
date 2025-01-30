@@ -11,6 +11,8 @@
   --paragraph-font-size: 18px;
   --font-family: 'IBM Plex mono', sans-serif;
   --margin-small: 10px;
+  --margin-medium-small: 20px;
   --margin-medium: 40px;
   --margin-large: 50px;
+  --text-line-height: 23.4px;
 }
