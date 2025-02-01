@@ -6,46 +6,51 @@
 
 :root.theme-dark {
   --background-image-url: url(../images/cover-image-dark.png);
-  --main-color: #ff0070;
+  --background-color: #000028;
+  --main-decor-color: #ff0070;
+  --main-text-background-color: #ff0070;
   --main-paragraph-text-color: #f1b2ce;
   --accent-color: #db00ff;
   --supplement-text-color: #000028;
+  --footer-title-shadow: #ff0070;
+  --text-shadow: #ff0070;
+  --link-color: #f1b2ce;
+  --button-hover-color: rgb(255, 0, 112 / 0.4);
 }
 /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 
-.theme-dark .header__theme-dark-rec-icon {
+.theme-dark .header-rec-icon {
   display: inline-block;
 }
 
-.theme-dark .decor-rectangles::before {
-  border-block-end: solid var(--main-color) 1px;
-  border-inline-start: solid var(--main-color) 1px;
-}
-
-.theme-dark .decor-rectangles::after {
-  border-block-start: solid var(--main-color) 1px;
-  border-inline-end: solid var(--main-color) 1px;
-}
-
-.theme-dark .header__theme-menu-button_active {
-  border: solid 1px var(--main-color);
-}
-
-.theme-dark .header__theme-menu-button {
-  color: var(--main-color);
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  outline: solid 1px rgb(50 49 45 / 0.4);
-}
-
 .theme-dark .main__article-header {
-  color: var(--main-color);
+  color: var(--main-decor-color);
 }
 
-.theme-dark .footer__title {
-  color: var(--accent-color);
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --background-image-url: url(../images/cover-image-dark.png);
+    --background-color: #000028;
+    --main-decor-color: #ff0070;
+    --main-text-background-color: #ff0070;
+    --main-paragraph-text-color: #f1b2ce;
+    --accent-color: #db00ff;
+    --supplement-text-color: #000028;
+    --footer-title-shadow: #ff0070;
+    --text-shadow: #ff0070;
+    --link-color: #f1b2ce;
+    --button-hover-color: rgb(255, 0, 112 / 0.4);
+  }
+
+  .header-rec-icon {
+    display: inline-block;
+  }
+
+  .main__article-header {
+    color: var(--main-decor-color);
+  }
 }

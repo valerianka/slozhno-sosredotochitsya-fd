@@ -4,11 +4,6 @@
 */
 
 :root {
-  /* --background-image-url: url(../images/cover-image-dark.png);
-  --main-color: #FF0070;
-  --main-paragraph-text-color: #F1B2CE;
-  --accent-color: #DB00FF;
-  --supplement-text-color: #000028; */
   --paragraph-font-size: 18px;
   --font-family: "IBM Plex mono", sans-serif;
   --margin-small: 10px;
@@ -16,4 +11,5 @@
   --margin-medium: 40px;
   --margin-large: 50px;
   --text-line-height: 23.4px;
+  --main-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
