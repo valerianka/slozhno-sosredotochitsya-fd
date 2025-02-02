@@ -5,7 +5,7 @@
 
 :root {
   --paragraph-font-size: 18px;
-  --font-family: "IBM Plex mono", sans-serif;
+  --font-family: "IBM Plex mono", monospace, sans-serif;
   --margin-small: 10px;
   --margin-medium-small: 20px;
   --margin-medium: 40px;

@@ -15,6 +15,7 @@
   --main-decor-color: #353430;
   --accent-color: #ffc2e6;
   --footer-title-shadow: #ff0070;
+  --header-title-shadow: #ff8dcb;
   --text-shadow: #ff8dcb;
   --supplement-text-color: #353430;
   --main-paragraph-text-color: #353430;
@@ -36,6 +37,7 @@
     --accent-color: #ffc2e6;
     --footer-title-shadow: #ff0070;
     --header-title-shadow: #ff8dcb;
+    --text-shadow: #ff8dcb;
     --supplement-text-color: #353430;
     --main-paragraph-text-color: #353430;
     --link-color: #353430;

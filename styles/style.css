@@ -17,7 +17,7 @@
   position: relative;
   inline-size: 100%;
   min-block-size: 668px;
-  block-size: 100vh;
+  block-size: 100vb;
 }
 
 .header__wrapper {
@@ -248,7 +248,7 @@
   position: relative;
   justify-content: space-evenly;
   align-items: center;
-  block-size: 100vh;
+  block-size: 100vb;
   min-block-size: 668px;
 }
 

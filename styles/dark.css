@@ -15,7 +15,7 @@
   --footer-title-shadow: #ff0070;
   --text-shadow: #ff0070;
   --link-color: #f1b2ce;
-  --button-hover-color: rgb(255, 0, 112 / 0.4);
+  --button-hover-color: rgb(255 0 112 / 0.4);
 }
 /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -43,7 +43,7 @@
     --footer-title-shadow: #ff0070;
     --text-shadow: #ff0070;
     --link-color: #f1b2ce;
-    --button-hover-color: rgb(255, 0, 112 / 0.4);
+    --button-hover-color: rgb(255 0 112 / 0.4);
   }
 
   .header-rec-icon {
