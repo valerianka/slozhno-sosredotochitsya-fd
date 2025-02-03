@@ -150,8 +150,7 @@
   line-height: var(--text-line-height);
 }
 
-.main__article-advice,
-.main__article-reason {
+.main__article-card {
   grid-column: span 3;
   grid-row: span 1;
 }
@@ -331,8 +330,7 @@
     padding-right: 20px;
   }
 
-  .main__article-advice,
-  .main__article-reason {
+  .main__article-card {
     grid-column: 2 / -1;
     grid-row: span 1;
     padding-left: 10px;
@@ -395,8 +393,8 @@
     line-height: 18px;
   }
 
-  .main__article-reason,
-  .main__article-advice {
+  .main__article-card 
+   {
     padding-left: 0;
   }
 
