@@ -134,7 +134,8 @@
   margin-block-end: var(--margin-large);
 }
 
-.article-title-aside {
+.article-title-advice,
+.article-title-reason {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content;
@@ -149,12 +150,13 @@
   line-height: var(--text-line-height);
 }
 
-.main__article-aside-row {
+.main__article-advice-row,
+.main__article-reason-row {
   grid-column: span 3;
   grid-row: span 1;
 }
 
-.article-title-above {
+.article-title-cause {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: var(--margin-medium-small);
@@ -162,18 +164,18 @@
   grid-auto-flow: row;
 }
 
-.main__article-above-row {
+.main__article-cause-row {
   grid-column: span 3;
   grid-row: span 1;
 }
 
-.main__article-header-above-row {
+.main__article-header-cause-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content;
 }
 
-.article-header-above {
+.article-header-cause {
   margin-block-end: var(--margin-medium-small);
 }
 
@@ -306,11 +308,12 @@
     margin-left: 10px;
   }
 
-  .article-title-aside {
+  .article-title-advice,
+  .article-title-reason {
     column-gap: 20px;
   }
 
-  .article-header-above {
+  .article-header-cause {
     margin-block-end: var(--margin-small);
   }
 
@@ -319,24 +322,23 @@
     grid-column: 1;
   }
 
-  .article-title-aside > .main__article-header {
+  .article-title-advice > .main__article-header,
+  .article-title-reason > .main__article-header {
     margin-block-end: 0;
   }
 
-  .article-header-padded {
+  .article-header-reason {
     padding-right: 20px;
   }
 
-  .article-row-padded {
+  .main__article-advice-row,
+  .main__article-reason-row {
+    grid-column: 2 / -1;
+    grid-row: span 1;
     padding-left: 10px;
   }
 
-  .main__article-aside-row {
-    grid-column: 2 / -1;
-    grid-row: span 1;
-  }
-
-  .main__article-header-above-row {
+  .main__article-header-cause-row {
     column-gap: var(--margin-small);
   }
 
@@ -393,17 +395,18 @@
     line-height: 18px;
   }
 
-  .article-row-padded {
+  .main__article-reason-row,
+  .main__article-advice-row {
     padding-left: 0;
   }
 
-  .article-title-above {
+  .article-title-cause {
     grid-template-rows: 1;
     row-gap: 0;
     column-gap: var(--margin-small);
   }
 
-  .main__article-above-row {
+  .main__article-cause-row {
     grid-column: span 1;
   }
 }
