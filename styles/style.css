@@ -150,8 +150,8 @@
   line-height: var(--text-line-height);
 }
 
-.main__article-advice-row,
-.main__article-reason-row {
+.main__article-advice,
+.main__article-reason {
   grid-column: span 3;
   grid-row: span 1;
 }
@@ -164,12 +164,12 @@
   grid-auto-flow: row;
 }
 
-.main__article-cause-row {
+.main__article-cause {
   grid-column: span 3;
   grid-row: span 1;
 }
 
-.main__article-header-cause-row {
+.main__article-header-cause {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content;
@@ -331,14 +331,14 @@
     padding-right: 20px;
   }
 
-  .main__article-advice-row,
-  .main__article-reason-row {
+  .main__article-advice,
+  .main__article-reason {
     grid-column: 2 / -1;
     grid-row: span 1;
     padding-left: 10px;
   }
 
-  .main__article-header-cause-row {
+  .main__article-header-cause {
     column-gap: var(--margin-small);
   }
 
@@ -395,8 +395,8 @@
     line-height: 18px;
   }
 
-  .main__article-reason-row,
-  .main__article-advice-row {
+  .main__article-reason,
+  .main__article-advice {
     padding-left: 0;
   }
 
@@ -406,7 +406,7 @@
     column-gap: var(--margin-small);
   }
 
-  .main__article-cause-row {
+  .main__article-cause {
     grid-column: span 1;
   }
 }
